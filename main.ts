@@ -23,6 +23,9 @@ basic.forever(function () {
     } else if (heading >= 292.5 && heading < 337.5) {
         // Noroeste (↖)
         basic.showArrow(ArrowNames.NorthWest)
+    } else if (heading >= 337.5 || heading < 22.5) {
+        // Norte (↑)
+        basic.showArrow(ArrowNames.North)
     } else {
         basic.showIcon(IconNames.SmallDiamond)
         basic.pause(100)
